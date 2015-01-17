@@ -1,0 +1,257 @@
+$main-font: 'Raleway', sans-serif;
+
+// Palette colors
+$bg-color: #141519;
+$cell-color: #404143;
+$text-color: #5c8f26;
+$alt-text-color: #b8b8b8;
+$header-color: #70bc1e;
+$white: #fff;
+
+// Images
+$landing-bg: "../images/Desert_gs.jpg";
+$home-bg: "../images/Bellagio_gs.jpg";
+$about-bg: "../images/Strip_gs.jpg";
+$contact-bg: "../images/PSXgs.jpg";
+
+// Icons
+$home-icon: "../icons/home.png";
+$about-icon: "../icons/id.png";
+$portfolio-icon: "../icons/briefcase.png";
+$contact-icon: "../icons/email.png";
+
+
+
+body, html{
+    font-family: $main-font !important;
+    height: 100%;
+    margin: 0;
+    //overflow: hidden;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.65); /*dim the background*/
+}
+
+.hideme{
+    opacity: 1;   
+}
+
+.left-fixed{
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.left-fixed ul li{
+    margin: 10px 0;
+}
+
+.menu-name{
+    margin-left: 20px;
+    padding-top: 50px;
+    font-size: 1.2em;    
+}
+
+.menu-items{
+    position: fixed;
+    top: 5%;
+}
+
+.social-media{
+    position: fixed;
+    bottom: 5%;   
+}
+
+p, li, h1, h2{
+    color: $text-color;
+    position: relative; 
+    font-family: $main-font;
+}
+h3, h4, h5{
+    color: $white; 
+    font-weight: 300;
+    position: relative;
+    font-family: $main-font;
+}
+
+.section{
+    min-height: 100%; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+}
+
+#landing{
+    @extend .section;
+    background-image: url(#{$landing-bg});
+    text-align: center;
+}
+
+#home{
+    @extend .section;
+    background-image: url(#{$home-bg});
+    text-align: left;
+}
+
+#home .row{
+    margin: 0 5%;
+    width: 90%;
+}
+
+#about{
+    @extend .section;
+    background-image: url(#{$about-bg});
+    text-align: left;
+}
+
+#contact{
+    @extend .section;
+    background-image: url(#{$contact-bg});
+    text-align: left;
+}
+
+.contact-row{
+    padding: 5% 10%;
+}
+
+.profile{ 
+    height: 25vh;
+ 
+    p { 
+        display: table-cell; 
+        height: 24vh; 
+        vertical-align: middle; 
+    }
+    img{
+        max-height: 24.75vh;
+        width: auto;
+    }
+}
+
+.textbox{
+    width: 60%; 
+    margin: 0 20%;
+}
+
+.sm-textbox{
+    width: 50%;
+    margin: 0 25%;
+    padding: 1%;
+    border: 2px solid $header-color;
+}
+
+.full-cell{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.intro-text{
+    font-size: 1.2em;  
+    padding: 0 5%;
+    margin: 0;
+}
+
+#orientation {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+    visibility: hidden;
+}
+
+.row{
+    //margin: 0 5%;  
+    //padding: 0 2%;
+}
+
+.right-white-border{
+    border-right: 2px solid $white;   
+}
+
+.grey-border{
+    border: 1px solid $alt-text-color;   
+}
+
+.grey-bg{
+    background-color: rgba(0,0,0,0.5);   
+}
+
+// Color classes
+.green{
+    color: $text-color;
+} 
+
+.grey{
+    color: $alt-text-color;   
+}
+
+.white{
+    color: $white;   
+}
+
+
+// Spacing classes
+.header-pad{
+    padding-top: 10%;   
+}
+
+.top-margin{
+    margin-top: 5%;   
+}
+
+.margin-15-10{
+    margin: 0 15% 0 10%;   
+}
+
+.inner-top-margin{
+    margin-top: 2%;   
+}
+
+
+.top-pad{
+    padding-top: 5%;   
+}
+
+.inner-top-pad{
+    padding-top: 2%;   
+}
+
+.upper-left-pad{
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+// Dimension classes
+.height-15{
+    height: 15%;   
+}
+
+.height-40{
+    height: 40vh;
+}
+
+// Image classes
+.center-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+// Button classes
+.arrow-btn{
+    position: absolute; 
+    display: inline-block;
+}
+
