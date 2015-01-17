@@ -38,3 +38,9 @@ $('.menu-playstation').hover(function(){
 }, function(){
     $('.menu-playstation img').attr("src", "icons/playstation_gs.png");
 });
+
+$('.link-cell').hover(function(){
+    $('.link-cell a h3').attr("color", "white");
+}, function(){
+    $('.link-cell').attr("background-color", "#5c8f26");
+});

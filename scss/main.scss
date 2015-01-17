@@ -150,9 +150,31 @@ h3, h4, h5{
 }
 
 .full-cell{
-    width: 100%;
+    width: 95%;
     height: 25%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.35);
+    
+    h3{
+       padding: 1% 3% 0 3%; 
+    }
+    p{
+       padding: 1% 3%;  
+    }    
+}
+
+.full-cell{
+    margin: 1% 0;  
+}
+
+.large-5 .full-cell{
+    margin-left: 2%;   
+}
+
+.link-cell{
+    width: 75%;
+    padding: 1% 2%;
+    margin: 2% 0;
+    background-color: rgba(0,0,0,0.5); 
 }
 
 .intro-text{
@@ -176,8 +198,12 @@ h3, h4, h5{
     //padding: 0 2%;
 }
 
-.right-white-border{
-    border-right: 2px solid $white;   
+.left-white-border{
+    border-left: 2px solid $white;       
+}
+
+.vertical-center{
+   padding: 6% 0; 
 }
 
 .grey-border{
@@ -233,6 +259,10 @@ h3, h4, h5{
     padding-left: 2%;
 }
 
+.left-pad{
+    margin-left: 3%;
+}
+
 // Dimension classes
 .height-15{
     height: 15%;   
@@ -255,3 +285,24 @@ h3, h4, h5{
     display: inline-block;
 }
 
+// Form styling
+#name{
+    height: 50px;
+}
+
+#email{
+    height: 50px;
+}
+
+#message{
+    height: 350px;
+}
+
+.send-btn{
+    font-size: 1.2em;
+    font-family: $main-font;
+    padding: 8px;
+    float: right;
+    color: $white;
+    background-color: $cell-color;
+}
