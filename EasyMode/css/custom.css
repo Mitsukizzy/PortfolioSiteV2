@@ -1,0 +1,31 @@
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,li{
+    font-family: "Raleway", sans-serif;
+}
+
+.top-bar-section ul li > a{
+    font-family: "Raleway", sans-serif;
+}
+
+#hero-home{
+    height: 40%;
+    background: url(../images/Desert.JPG);   
+    background-size: cover;
+}
+#intro-home{
+    text-align: center;
+    padding: 3% 20%;
+}
+#featured-home{
+    text-align: center;
+    padding: 3% 10%;
+    background-color: #b8b8b8;
+}   
+
+
+.underline{
+    text-decoration: underline;
+}
