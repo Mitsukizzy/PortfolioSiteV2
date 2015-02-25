@@ -1,13 +1,8 @@
+/*
 if(window.innerHeight > window.innerWidth){
     $('#orientation').css('visibility', 'visible');
 }
-
-
-$('.anchorlink').click(function(event){
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-    event.preventDefault();
-});      
-
+*/
 
 $('.menu-facebook').hover(function(){
     $('.menu-facebook img').attr("src", "icons/facebook.png");

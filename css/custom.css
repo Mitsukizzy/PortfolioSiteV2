@@ -1,0 +1,123 @@
+body, html {
+  font-family: "Raleway", sans-serif !important;
+  height: 100%;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.35); /*dim the background*/ 
+}
+
+p, li, h1, h2 {
+  color: #5c8f26;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+h3, h4, h5 {
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 4%;
+    width: 100%;
+    padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer p{
+    float: left;   
+    margin: 8px;
+}
+
+.footer ul li{
+    list-style-type: none;
+    display: inline;
+    float: right;
+    padding: 4px;
+}
+
+.section{
+  min-height: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#landing {
+  background-image: url(../images/Desert.jpg);
+  text-align: center;
+}
+#about, #contact {
+  background-color: white;
+  text-align: left;
+  height: 50%;
+}
+#home {
+  background-image: url(../images/Bellagio_gs.jpg);
+  text-align: left;
+}
+#porfolio {
+  background-image: url(../images/Strip_gs.jpg);
+  text-align: left;
+}
+#contact {
+    background-color: black;
+    text-align: left;
+    height: 50%;
+}
+
+#about .row{
+    margin: 0 15%;  
+    width: 100%;
+}
+
+.profile-image{
+    border-radius: 350px;
+    height: 40%;
+    width: 40%;
+}
+
+.textbox {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.sm-textbox {
+  width: 50%;
+  margin: 0 25%;
+  padding: 1%;
+  border: 2px solid #70bc1e;
+}
+
+.margin-top10{
+  margin-top: 10%;   
+}
+.padding-top10{
+  padding-top: 10%;   
+}
+.padding-LR15{
+    padding: 0 15%;   
+}
+
+.center-vertical{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Color Classes*/
+.white{
+    color: #fff;   
+}
