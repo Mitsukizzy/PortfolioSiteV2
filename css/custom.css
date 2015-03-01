@@ -14,17 +14,29 @@ body, html {
   background-color: rgba(0, 0, 0, 0.35); /*dim the background*/ 
 }
 
-p, li, h1, h2 {
+h1{
+    color: #404143;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-size: 6.2em;
+}
+
+p, li, h2, h3 {
   color: #5c8f26;
   position: relative;
   font-family: "Raleway", sans-serif;
 }
 
-h3, h4, h5 {
+h4, h5 {
   color: #fff;
   font-weight: 300;
   position: relative;
   font-family: "Raleway", sans-serif;
+}
+
+.header{
+    font-size: 3em;   
+    padding-top: 5%;
 }
 
 .footer {
@@ -34,6 +46,7 @@ h3, h4, h5 {
     width: 100%;
     padding: 0 5%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 
 .footer p{
@@ -49,38 +62,31 @@ h3, h4, h5 {
 }
 
 .section{
-  min-height: 100%;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
+    min-height: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 #landing {
-  background-image: url(../images/Desert.jpg);
-  text-align: center;
+  background-image: url(../images/Strip.jpg);
+  text-align: right;
 }
-#about, #contact {
-  background-color: white;
-  text-align: left;
-  height: 50%;
-}
-#home {
-  background-image: url(../images/Bellagio_gs.jpg);
+#about {
+  background-image: url(../images/Polygon.jpg);
   text-align: left;
 }
-#porfolio {
-  background-image: url(../images/Strip_gs.jpg);
+#portfolio {
+  background-image: url(../images/SoftPolygon.jpg);
   text-align: left;
 }
 #contact {
-    background-color: black;
+    background-image: url(../images/Desert.JPG);
     text-align: left;
-    height: 50%;
 }
 
 #about .row{
-    margin: 0 15%;  
-    width: 100%;
+    max-width: 70em;
 }
 
 .profile-image{
@@ -93,19 +99,36 @@ h3, h4, h5 {
   width: 60%;
   margin: 0 20%;
 }
-
-.sm-textbox {
-  width: 50%;
-  margin: 0 25%;
-  padding: 1%;
-  border: 2px solid #70bc1e;
+.profile-info{
+    font-size: 1.2em;   
 }
 
+.margin-top5{
+  margin-top: 5%;   
+}
 .margin-top10{
   margin-top: 10%;   
 }
+.margin-top15{
+  margin-top: 15%;   
+}
+.margin-right10{
+    margin-right: 10%;   
+}
+.margin-LR5{
+    margin: 0 5%;   
+}
+.padding-top5{
+  padding-top: 5%;   
+}
 .padding-top10{
   padding-top: 10%;   
+}
+.padding-right5{
+  padding-right: 5%;   
+}
+.padding-right10{
+    padding-right: 10%;   
 }
 .padding-LR15{
     padding: 0 15%;   
